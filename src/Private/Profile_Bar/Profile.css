@@ -1,0 +1,27 @@
+.profile {
+  width: 7%;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.profile .profile_align {
+  text-align: center;
+  position: fixed;
+  margin-top: 2rem;
+  margin-left: 1rem;
+}
+.profile .profile_align .profile_bar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #1d1d2c;
+  margin-bottom: 1rem;
+}
+.profile .profile_align .profile_btn_icons {
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  background: transparent;
+}
+
+.profile_bar_align {
+  display: flex;
+}/*# sourceMappingURL=Profile.css.map */

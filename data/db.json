@@ -1,0 +1,53 @@
+{
+  "posts": [],
+  "users": [
+    {
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "$2a$10$A8uzsLJwAUQeI.dtibblIuJEewcjNA5Lw1Y.gNMlEUgLsxCydCesS",
+      "date": "10.03.2023-17:32Register-At in user",
+      "id": 1
+    },
+    {
+      "email": "messi@gmail.com",
+      "password": "$2a$10$OTXPdLS/cVCYKdUxAgodhe39vq2AjxAy6sWy.h.ZXQWj40l04K09S",
+      "date": "10.03.2023-17:37Register-At in user",
+      "id": 2
+    },
+    {
+      "email": "dostonqudratov@gmail.com",
+      "password": "$2a$10$wtKUH/IyQhevgHvntvgCfezw1Qe4oQsITCDwOaX61UkS.SrdZ.iVK",
+      "date": "10.03.2023-17:38Register-At in user",
+      "id": 3
+    }
+  ],
+  "adminss": [
+    {
+      "name": "Shohijahon",
+      "familya": "Musinkulov",
+      "date": "2023-07-23",
+      "tel_number": "998991457766",
+      "lavozim": "sektor-raxbari",
+      "default_sektor_raqam": "bir",
+      "sektor_raqami": "bir",
+      "email": "shohijahonmusinkulov@gmail.com",
+      "password": "82850406m",
+      "password_replay": "82850406m",
+      "date_request": "17.03.2023-0:41 Request-date",
+      "id": 2
+    },
+    {
+      "name": "Sanjar",
+      "familya": "Sanjar",
+      "date": "21212-11-12",
+      "tel_number": "99826362636",
+      "lavozim": "sektor-raxbari",
+      "default_sektor_raqam": "uch",
+      "sektor_raqami": "bir",
+      "email": "sanjar@gmail.com",
+      "password": "sanjar",
+      "password_replay": "sanjar",
+      "date_request": "17.03.2023-21:13 Request-date",
+      "id": 6
+    }
+  ]
+}

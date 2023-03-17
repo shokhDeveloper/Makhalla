@@ -1,0 +1,161 @@
+@import "../../../scss/varieble.scss";
+@import "../../../scss/mixin.scss";
+.ruyhat{
+    width: 100%;
+}
+.ruyhat_header{
+    padding: 1rem;
+    padding-top: 1.5rem;
+    // text-align: center;
+}
+.ruyhat_header h2{
+    font-size: 27px;
+}
+.ruyhat_form{
+    width: 100%;
+    text-align: center;
+}
+.ruyhat_form div{
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+.ruyhat_form div label{
+    width: 48%;
+    text-align: center;
+    font-size: 20px;
+}
+.ruyhat_form div label input[type="text"], .ruyhat_form div label input[type="number"], .ruyhat_form div label input[type="date"], .ruyhat_form div label input[type="email"], .ruyhat_form div label input[type="password"],  .ruyhat_form div label select{
+    display: block;
+    width: 100%; 
+    margin: 0.5rem auto;
+    padding: 1rem;
+    background: #fff;
+    border: 1px solid transparent;
+    outline: 3px solid #9cbdef;
+    border-radius: 8px;
+    font-size: 17px;   
+    // margin-top: 0.8rem; 
+    margin: 0.8rem;
+
+}
+.ruyhat_form div label input[type="text"]:focus, .ruyhat_form div label input[type="number"]:focus, .ruyhat_form div label input[type="date"]:focus, .ruyhat_form div label input[type="password"]:focus, .ruyhat_form div label input[type="email"]:focus, .ruyhat_form label select:focus{
+    outline: 3px solid #9cbdef;
+    transition: 0.5s ease ;
+}
+.ruyhat_form div:nth-child(6) .check_form{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.ruyhat_form div:nth-child(3) label input[type="radio"]{
+    margin-left: 0.5rem;
+}
+.ruyhat_form div:nth-child(6){
+    width: 40%;
+    margin: 0 auto;
+
+}
+.ruyhat_form div:nth-child(6) button{
+    position: relative;
+    top: 0.6rem;
+}
+.ruyhat_header form{
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    border-radius:8px;
+    padding: 0.4rem;
+}
+.ruyhat_header form label{
+    display: flex;
+    align-items: center;
+}
+.ruyhat_header form label input{
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    font-size: 16px;
+}
+.ruyhat_cards{
+    width: 100%;
+    height: auto;
+}
+.ruyhat_cards .ruyhat_cards_title{
+    padding: 1rem;
+    @include between;
+}
+.ruyhat_cards .ruyhat_cards_title h2{
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.foydalanuvchi_malumot{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.foydalanuvchi_malumot .foydalanuvchi_header{
+    text-align: center;
+    background: $button-color;
+    color: #fff;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.foydalanuvchilar{
+    background: #fff;
+}
+.foydalanuvchilar li{
+    padding: 1rem;
+    @include between
+}
+.foydalanuvchi_name{
+    display: flex;
+    width: 27%;
+}
+.foydalanuvchi_name p{
+    padding: 0rem 0.3rem;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+.foydalanuvchi_btns button{
+    margin-right: 0.5rem;
+    transition: 0.3s ease all;
+}
+.foydalanuvchi_btns button:nth-child(1){
+    padding: 0.5rem;
+    background: green;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.foydalanuvchi_btns button:nth-child(1):hover, .foydalanuvchi_btns button:nth-child(2):hover{
+    background: #fff;
+    color: #000;
+}
+.foydalanuvchi_btns button:nth-child(2){
+    padding: 0.5rem;
+    background: crimson;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.foydalanuvchilar li{
+    transition: 0.5s ease all;
+}
+.foydalanuvchilar li:hover{
+    background: #8cb7f6;
+    color: #fff;
+}
+.foydalanuvchilar li div:nth-child(2){
+    font-size: 18px;
+}

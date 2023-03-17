@@ -1,0 +1,155 @@
+.umumiy {
+  width: 100%;
+}
+
+.umumiy .umumiy_align {
+  text-align: center;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.umumiy_align form {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 0px 8px;
+  border-radius: 10px;
+}
+
+.umumiy_align form input {
+  padding: 0.5rem;
+  width: 100%;
+  border: 1px solid transparent;
+  outline: 1px solid transparent;
+  font-size: 18px;
+}
+
+.umumiy_routes {
+  width: 95%;
+  margin: 0 auto;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  align-items: start;
+}
+
+.umumiy_routes ul {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  list-style: none;
+}
+
+.umumiy_routes ul li .ruyhat_page {
+  text-decoration: none;
+  color: #142756;
+  padding-bottom: 0.5rem;
+  transition: 0.5s ease all;
+  border-bottom: 2px solid transparent;
+}
+
+.ruyhat_active {
+  text-decoration: none;
+  color: #142756;
+  padding-bottom: 0.5rem;
+  transition: 0.5s ease all;
+  border-bottom: 2px solid #142756;
+}
+
+.umumiy_routes button {
+  padding: 0.5rem 2rem;
+  padding-right: 1.5rem;
+  border-radius: 7px;
+  border: 2px solid #3385FF;
+  color: #3385FF;
+  font-size: 18px;
+  background-image: url("../../../assets/images/Shamol.svg");
+  background-position: 90%;
+  background-repeat: no-repeat;
+  background-size: 18px;
+  padding: 0.5rem 1rem;
+  padding-left: 0.5rem;
+  padding-right: 2rem;
+}
+
+.filter_parent {
+  width: 300px;
+  height: auto;
+  text-align: end;
+  position: relative;
+}
+
+.filter_bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: auto;
+  transform: translateX(45px);
+  margin-top: 1.3rem;
+  background: #D9E3FF;
+  border-radius: 10px;
+  padding: 0.5rem 0rem;
+}
+
+.filter_bar li {
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.filter_bar li:hover {
+  background: #fff;
+}
+
+.filter_bars {
+  width: 100%;
+  text-align: end;
+  position: relative;
+}
+
+.filter_uchburchak {
+  margin: 0 auto;
+  right: 1.4rem;
+  margin-top: 0.2rem;
+  position: absolute;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 13px solid #3385FF;
+}
+
+.routes_cards {
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  height: 450px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.routes_card {
+  padding: 0.4rem;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.routes_card_text {
+  display: flex;
+  width: 50%;
+}
+
+.routes_card_text p:nth-child(1) {
+  margin-right: 0.5rem;
+  padding-right: 0.3rem;
+}
+
+.routes_card_text_2 p {
+  border-left: 1px solid #AFAFAF;
+  padding-left: 1rem;
+}/*# sourceMappingURL=Umumiy.css.map */

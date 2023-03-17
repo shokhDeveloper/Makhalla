@@ -1,0 +1,13 @@
+@import "scss/varieble.scss";
+@font-face {
+    font-family: "Rubik";
+    src: url("./assets/Fonts/transfonter/Rubik-Regular.woff2") format('woff2'),
+        url('./assets/Fonts/transfonter/Rubik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    font-family: "Rubik";
+}

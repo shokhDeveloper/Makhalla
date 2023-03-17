@@ -1,0 +1,46 @@
+@import "../scss/varieble.scss";
+.modal_overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal{
+    text-align: center;
+    width:70%;
+    background: #fff;
+    // height: 200px;
+    // padding: 1rem;
+    border-radius: 10px;
+}
+.modal_header{
+    width: 100%;
+    background: $button_color;
+    padding: 0.5rem;
+    color: #fff;
+    letter-spacing: 2px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    position: relative;
+}
+.modal h3{
+    font-size: 33px;
+}
+.x{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.3rem 0.5rem;
+    background: #fff;
+    font-size: 20px;
+    // border-radius: 10px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+}

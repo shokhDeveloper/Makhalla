@@ -1,0 +1,43 @@
+.bosh {
+  width: 100%;
+  height: auto;
+}
+
+.bosh_card_align {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.bosh_card {
+  width: 50%;
+}
+
+.bosh_card .card, .thue_cards .card {
+  padding: 1rem;
+  width: 500px;
+  background: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.card_text {
+  width: 50%;
+  border-right: 1px solid grey;
+}
+
+.card_text_2 {
+  width: 50%;
+  text-align: start;
+  margin-left: 1rem;
+}
+
+.card_text p, .card_text_2, p {
+  padding: 0.5rem 0rem;
+  letter-spacing: 1px;
+}
+
+.mahalla_btn {
+  margin-top: 3rem;
+}/*# sourceMappingURL=Bosh_sahifa.css.map */

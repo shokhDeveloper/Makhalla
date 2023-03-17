@@ -1,0 +1,50 @@
+.routes {
+  width: 95%;
+  margin: 1.3rem auto;
+}
+
+.routes_header {
+  display: flex;
+  align-items: center;
+  background: #3385FF;
+  padding: 0.4rem 0.5rem;
+  color: #fff;
+  border-radius: 8px;
+}
+
+.routes_header_child {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.routes_header_child p {
+  letter-spacing: 2px;
+  padding-right: 0.5rem;
+  font-size: 18px;
+}
+
+.routes_header_child p:nth-child(1)::after {
+  content: " ";
+  width: 2px;
+  height: 22px;
+  background: #fff;
+  display: inline-block;
+  margin-left: 0.3rem;
+}
+
+.route_header_child_2 p::before {
+  content: " ";
+  display: inline-block;
+  width: 2px;
+  height: 25px;
+  background: #fff;
+  margin-right: 1rem;
+  position: relative;
+  top: 0.3rem;
+}
+
+.route_header_child_2 p {
+  position: relative;
+  top: -0.3rem;
+}/*# sourceMappingURL=Yoshlar.css.map */

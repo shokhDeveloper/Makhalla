@@ -1,0 +1,125 @@
+.sidebar {
+  background: #3385FF;
+  min-height: 100vh;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: 0.5s ease all;
+}
+
+.sidebar_header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar_logo {
+  width: 100%;
+  height: 230px;
+}
+
+.sidebar_logo img {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sidebar_links {
+  width: 100%;
+}
+
+.sidebar_links a {
+  width: 100%;
+  display: block;
+  font-size: 18px;
+  text-decoration: none;
+  padding: 1rem 0rem;
+  padding-left: 4rem;
+  transition: 0.4s ease all;
+}
+
+.sidebar_links .page_1 {
+  color: #fff;
+  background-image: url("../../assets/images/Vector (1).svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.sidebar_links .page_2 {
+  color: #fff;
+  background-image: url("../../assets/images/statistika.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.sidebar_links .page_3 {
+  color: #fff;
+  background-image: url("../../assets/images/File.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.sidebar_links .page_4 {
+  color: #fff;
+  background-image: url("../../assets/images/plyus_remove_b.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.active:nth-child(1) {
+  background: #fff;
+  background-image: url("../../assets/images/transfonter.org-20230310-155900/Vector.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.active:nth-child(2) {
+  background: #fff;
+  background-image: url("../../assets/images/statistika_active.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.active:nth-child(3) {
+  background: #fff;
+  background-image: url("../../assets/images/document_active.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.active:nth-child(4) {
+  background: #fff;
+  background-image: url("../../assets/images/plyus_active.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 12%;
+}
+
+.out_sidebar {
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid #3385FF;
+  margin-right: 0;
+  transform: translateX(15px);
+  background-image: url("../../assets/images/Arrow_1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.active_sidebar {
+  padding: 1rem;
+  border-radius: 50%;
+  border: 1px solid #3385FF;
+  margin-right: 0;
+  transform: translateX(15px);
+  background-image: url("../../assets/images/Arrow_2_sites_download.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25px;
+}/*# sourceMappingURL=Sidebar.css.map */
