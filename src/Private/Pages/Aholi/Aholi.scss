@@ -1,3 +1,71 @@
+@import "../../../scss/varieble.scss";
 .aholi{
     width: 100%;
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
 }
+.error_text{
+    color: crimson;
+    text-align: center;
+}
+.aholi form{
+    width: 100%;
+    margin: 0 auto;
+}
+.aholi form div div{
+    width: 50%;
+    display: flex;
+    justify-content: start;
+}
+.aholi form div div:nth-child(2){
+    justify-content: end;
+}
+.aholi form .oliy  input{
+    // width: 90%;
+    margin: 0 auto;
+    width: 90%;
+}
+.aholi form div div:nth-child(2) input{
+    width: 90%;
+}
+.aholi form div{
+    width: 60%;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.aholi form div input, .aholi form div select {
+    width: 45%;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    font-size: 20px;
+    border: 1px solid transparent;
+    outline: 3px solid transparent;
+    background: #fff;
+    border-radius: 8px;
+    transition: 0.5s ease all;
+}
+.aholi form div input:focus, .aholi form div select:focus{
+    outline: 3px solid #73a6f3;
+}
+.aholi form label{
+    width: 100%;
+}
+.aholi .temir label{
+    width: 100%;
+    text-align: start;
+}
+.aholi .temir label:nth-child(2){
+    text-align: end;
+}
+.aholi .temir label  input{
+    width: 90%;
+    margin: 0;
+}
+.aholi form label{  
+    font-size: 20px;
+}
+

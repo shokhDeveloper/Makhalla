@@ -45,7 +45,7 @@ export const Sidebar = () => {
                 </NavLink>
                 <NavLink style={{margin: side !== true? "1.5rem 0rem": false, backgroundPosition: side !== true? "calc(50%)":false}} className={(params) => params.isActive? "active": "page_5"} to={"/aholi"}>
                 {side  !== false? (
-                    "Aholi"
+                    "Aholi qo'shish "
                 ):false}
                 </NavLink>
 

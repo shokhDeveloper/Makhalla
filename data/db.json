@@ -34,20 +34,27 @@
       "password_replay": "82850406m",
       "date_request": "17.03.2023-0:41 Request-date",
       "id": 2
-    },
+    }
+  ],
+  "aholi": [
     {
-      "name": "Sanjar",
-      "familya": "Sanjar",
-      "date": "21212-11-12",
-      "tel_number": "99826362636",
-      "lavozim": "sektor-raxbari",
-      "default_sektor_raqam": "uch",
-      "sektor_raqami": "bir",
-      "email": "sanjar@gmail.com",
-      "password": "sanjar",
-      "password_replay": "sanjar",
-      "date_request": "17.03.2023-21:13 Request-date",
-      "id": 6
+      "name": "Shohijahon",
+      "lastname": "Musinkulov",
+      "otch": "Muyinovich",
+      "date": "2006-07-23",
+      "malumot": "O'rta",
+      "jins": "erkak",
+      "bandlik_yoki_talaba": "44-Maktab",
+      "oliygoh_nomi": "",
+      "kurs_raqami": "",
+      "talaba_bandlik": "",
+      "oddiy_bandlik": "",
+      "temir_daftar": "yo'q",
+      "nogironlig": "yo'q",
+      "manzil": "Rudakiy",
+      "ayollar_daftari": "",
+      "vaqt": "19.03.2023-15:52 Ruyhatga kirgazildi",
+      "id": 1
     }
   ]
 }

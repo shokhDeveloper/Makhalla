@@ -50,9 +50,10 @@ export const Umumiy_Routes = () => {
             <div className="filter_bars">
             <div className="filter_uchburchak" style={{display: modal !== true? "none": "block"}}></div>
             <ul className="filter_bar"  style={{display: modal !== true? "none": "block"}}>
-                <li>0-14 yoshgacha</li>
-                <li>0-14 yoshgacha</li>
-                <li>0-14 yoshgacha</li>
+                <li>0-3 yoshgacha</li>
+                <li>3-7 yoshgacha</li>
+                <li>7-18 yoshgacha</li>
+                <li>18 dan katta</li>
             </ul>
             </div>
             </div> 
