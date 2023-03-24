@@ -108,6 +108,8 @@ export const Aholi =  () => {
                }
            }
 
+
+
             // const request = await axios.post("http://localhost:8989/aholi", {...user, vaqt: `${date.toLocaleDateString()}-${date.getHours()}:${date.getMinutes()} Ruyhatga kirgazildi`})
             // const response = await request.data
             // console.log(response)
