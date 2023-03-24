@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router"
 import { Bosh, Statistika, Umumiy, Ruyhat, Aholi } from "../Pages"
+import { MahallaSektorlar } from "../Pages/MahallaSektorlar"
 
 export const RoutesX = () => {
     let route = [
@@ -26,6 +27,10 @@ export const RoutesX = () => {
         {
             path: "/aholi",
             element: <Aholi/>
+        },
+        {
+            path: "/mahalla-sektorlar/*",
+            element: <MahallaSektorlar/>
         }
     ]
     return useRoutes(route)

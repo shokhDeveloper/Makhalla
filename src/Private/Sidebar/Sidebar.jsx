@@ -48,7 +48,9 @@ export const Sidebar = () => {
                     "Aholi qo'shish "
                 ):false}
                 </NavLink>
-
+                <NavLink style={{margin: side !== true? "1.5rem 0rem": false, backgroundPosition: side !== true? "calc(50%)":false}} to={"/mahalla-sektorlar"} className={(params) => params.isActive? "active": "page_6" }>
+                    {side !== false? "Mahalla Sektorlar": false}
+                </NavLink>
             </div>
         </div>
     )   

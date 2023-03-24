@@ -54,9 +54,8 @@
 .aholi form label{
     width: 100%;
 }
-.aholi .temir label{
-    width: 100%;
-    text-align: start;
+.aholi form div input[type="radio"]:focus{
+    outline: 1px solid transparent;
 }
 .aholi .temir label:nth-child(2){
     text-align: end;
@@ -68,4 +67,17 @@
 .aholi form label{  
     font-size: 20px;
 }
-
+.aholi .temir:nth-child(3) label{
+    width: 50%;
+}
+.temir .pas{
+    padding-left: 1rem;
+    text-align: start;
+    width: 92%;
+}
+.temir .malumot_label{
+    text-align: end;
+}
+.temir .malumot_label select{
+    width: 95%;
+}

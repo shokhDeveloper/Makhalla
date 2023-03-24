@@ -19,9 +19,15 @@ export const Bosh = () => {
                             <p><strong>Telefon raqami:</strong></p>
                             <p><strong>Geografik joylashuvi:</strong></p>
                             <p><strong>Mahalla raisi:</strong></p>
+                            <p><strong>Mahalla uchastkovoyi:</strong></p>
+                            <p><strong>Hokim yordamchisi:</strong></p>
+                            <p><strong>Yoshlar yetakchisi:</strong></p>
                             <p><strong>Tashkil topgan yili:</strong></p>
                         </div>
                         <div className="card_text_2">
+                            <p>XXX <span>XXX</span></p>
+                            <p>XXX <span>XXX</span></p>
+                            <p>XXX <span>XXX</span></p>
                             <p>XXX <span>XXX</span></p>
                             <p>XXX <span>XXX</span></p>
                             <p>XXX <span>XXX</span></p>
@@ -38,14 +44,13 @@ export const Bosh = () => {
                             <p><strong>Ayollar soni:</strong></p>
                             <p><strong>Erkaklar soni:</strong></p>
                             <p><strong>Xonadon soni:</strong></p>
-                            <p><strong>Oila soni:</strong></p>
+                            
                         </div>
                         <div className="card_text_2">
                             <p>5419</p>
                             <p>2123 (45%)</p>
                             <p>2876 (55%)</p>
                             <p>1234</p>
-                            <p>1234</p> 
                         </div>
                     </div>
                     </div>  

@@ -56,5 +56,13 @@
       "vaqt": "19.03.2023-15:52 Ruyhatga kirgazildi",
       "id": 1
     }
+  ],
+  "mahalla": [
+    {
+      "name": "Yoshlar",
+      "sektor_raqami": "2-Sektor",
+      "date": "21.03.2023-13:33 Ruyhatga kirgazildi",
+      "id": 1
+    }
   ]
 }

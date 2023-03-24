@@ -158,18 +158,19 @@ export const Aholi =  () => {
                     </label>
                 </div>
                 <div className="temir">
-                    <label htmlFor="passport" style={{display: passportBlock }}>
+                    <label htmlFor="passport" className="pas" style={{display: passportBlock }}>
                     <input type="number"  placeholder="Passport seriyasi"  name="passport" id="passport" />
                     </label>
-                    <label htmlFor="metirka" style={{display: metirka, textAlign: "start"}}>
+                    <label htmlFor="metirka" className="pas" style={{display: metirka, textAlign: "start"}}>
                     <input type="text" name="metirka" id="metirka" placeholder="Metirka raqami"  />
                     </label>
-                    <label htmlFor="malumoti"  style={{width: metirka !== "block" && passportBlock !== "block"? "50%": "85%", textAlign: "end", margin: "0 auto", justifyContent: "end"}}>
-                    <select name="malumoti" defaultValue={"malumoti"} id="malumoti"  ref={aholi_malumot} className="select_malumot" style={{width: "100%"}}>
+                    <label htmlFor="malumoti"  style={{width: metirka !== "block" && passportBlock !== "block"? "50%": "85%", textAlign: "end", margin: "0 auto", justifyContent: "end"}} className="malumot_label">
+                    <select name="malumoti"  defaultValue={"malumoti"} id="malumoti"  ref={aholi_malumot} className="select_malumot" >
                         <option value="malumoti" selected disabled>Ma'lumoti</option>
-                        <option value="MTT">MTT tarbiyalanuvchisi</option>
+                        <option value="MTT">DMTT tarbiyalanuvchisi</option>
                         <option value="O'rta">O'rta ta'lim</option>
-                        <option value="O'rta-yoki-Oliy">O'rta maxsus || Oliy</option>
+                        <option value="O'rta-yoki-Oliy">Oliy</option>
+                        <option value="o'rta">O'rta</option>
                         <option value="chaqaloq">Chaqaloq</option>
                     </select>
                     </label>

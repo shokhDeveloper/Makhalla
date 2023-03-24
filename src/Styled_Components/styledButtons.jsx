@@ -59,3 +59,31 @@ export const SubmitterButtons = styled.button.attrs({
         border: ${(params) => variant_button[params.variant].hover.border}
     }
 `
+const styledFilter = {
+    blue:{
+        padding: "0.5rem 1rem",
+        background: "#3385FF",
+        color: "#fff",
+        border: "1px solid transparent",
+        outline: "1px solid transparent",
+        fontSize: "1rem"
+    }
+}
+export const StyledFilter = styled.button.attrs({
+    type: "submit"
+})`
+    padding: ${(params) => styledFilter[params.variant].padding };
+    background: ${(params) => styledFilter[params.variant].background };
+    color: ${(params) => styledFilter[params.variant].color };
+    border:  ${(params) => styledFilter[params.variant].border};
+    outline: ${(params) => styledFilter[params.variant].outline};    
+    font-size: ${(params) => styledFilter[params.variant].fontSize};
+    border-radius: 8px;
+    transition: 0.5s ease all;
+    &:hover{    
+        background: ${(params) => styledFilter[params.variant].color};
+        color: ${(params) => styledFilter[params.variant].background };
+        outline: "1px solid transparent";
+        border: "1px solid transparent"
+    }
+`

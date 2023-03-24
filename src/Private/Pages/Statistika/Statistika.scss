@@ -81,3 +81,18 @@
     border-radius: 10px;
     padding: 1rem;
 }
+.statistika_card_examples{
+    @include between;
+    padding: 1rem;
+}
+.statistika_card_example{
+    width: 200px;
+    // border: 1px solid black;
+    background: #fff;
+    border-radius: 8px;
+    // color: ;
+    padding: 1.5rem 0.5rem;
+}
+.statistika_card_example p{
+    padding-top: 1rem;
+}

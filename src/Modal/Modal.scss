@@ -17,23 +17,26 @@
     // height: 200px;
     // padding: 1rem;
     border-radius: 10px;
+    height: 70vh;
+    overflow:scroll ;
 }
 .modal_header{
-    width: 100%;
+    width: 70%;
     background: $button_color;
     padding: 0.5rem;
     color: #fff;
     letter-spacing: 2px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-    position: relative;
+    position: fixed;
 }
 .modal h3{
     font-size: 33px;
 }
-.x{
+.modal .x{
     position: absolute;
     top: 0;
+    margin-top: 0;
     right: 0;
     padding: 0.3rem 0.5rem;
     background: #fff;
@@ -43,4 +46,29 @@
     outline: 1px solid transparent;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.modal form {
+    width: 100%;
+    // margin-top: 1rem;
+}
+.modal form input{
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    padding: 0.5rem;
+    background: #fff;
+    color: #000;
+    font-size: 18px;
+    border: 1px solid transparent;
+    outline: 2px solid rgb(95, 161, 216);
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+.modal form label{
+    margin-top: 1rem;
+}
+.modal_align{
+    padding: 4rem 1rem 1rem 1rem;
+    align-items: center;
+    display: flex;
 }

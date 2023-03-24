@@ -1,0 +1,94 @@
+@import "../../../scss/mixin.scss";
+@import "../../../scss/varieble.scss";
+.mahalla{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+}
+.mahalla-form{
+    background: #fff;
+    border-radius: 8px;
+}
+.mahalla-form label{
+    display: flex;
+    align-items: center;
+    padding-left: 0.5rem;
+}
+.mahalla-form label input{
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 18px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    border-radius: 8px;
+}
+.mahalla_cards{
+    padding-top: 1rem;
+    @include between;
+}
+.mahalla_cards button{
+    margin-top: 1rem;
+}
+.mahalla_links{
+    width: 20%;
+    list-style-type: none;
+    @include between;
+}
+.page_mahalla{
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s ease ;
+}
+.active_page_mahalla{
+    padding-bottom: 0.5rem;
+    text-decoration: none;
+    color: #000;
+    transition: 0.5s ease all;
+    border-bottom: 2px solid #000;
+}
+.mahalla_malumotlar li {
+    width: 100%;
+    @include between;
+}
+.mahalla_align{
+    padding-top: 1rem;
+}
+.mahalla_header{
+    background: rgb(0, 145, 255);
+    color: #fff;
+    text-align: center;
+    padding: 0.4rem;
+    border-radius: 8px;
+}   
+.mahalla_malumotlar{
+    background: #fff;
+    padding: 0.3rem;
+}
+.mahalla_malumotlar li{
+    padding: 0.4rem;
+    border-bottom: 1px solid rgb(206, 200, 200);
+}
+.mahalla_malumotlar li{
+    margin-top: 0.2rem;
+}
+.mahalla_malumotlar li div p{
+    font-size: 18px;
+    padding-right: 0.4rem;
+}
+.mahalla_malumotlar li div button{
+    padding: 0.4rem 1rem;
+    font-size: 17px;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    background: crimson;
+    color: #fff;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+}
+.mahalla_malumotlar li div button:hover{
+    background: #fff;
+    color: #000;
+    border: 1px solid black;
+}

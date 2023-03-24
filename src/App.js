@@ -5,6 +5,7 @@ import { Context } from "./Context";
 import { Global } from "./GlobalStyle";
 import { Home } from "./Private";
 import { Home as Not_Home } from "./Public";
+import { ReactQueryDevtools } from "react-query/devtools";
 function App() {
   const {token} = useContext(Context)
   const client = new QueryClient()
@@ -17,7 +18,6 @@ function App() {
             <Route path="/*" element={<Home/>}/>
             <Route path="*" element={<Navigate replace={true} to="/"/>}/>
             </>
-            
             ):(
               <>
               <Route path="/" element={<Not_Home/>}/>
@@ -25,6 +25,7 @@ function App() {
               </>
           )}
         </Routes>
+        <ReactQueryDevtools />
       </QueryClientProvider>
         <Global/>
      </div>
