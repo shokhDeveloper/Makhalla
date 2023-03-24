@@ -7,12 +7,14 @@ import "./Aholi.scss"
 import { Input } from "@mui/icons-material";
 import axios from "axios";
 export const Aholi =  () => {
+    let user = {}
     const date = new Date()
     const aholi_malumot = useRef()
     const bandlik_input = useRef()
     const ayollar = useRef()
     const dateRef = useRef()
     const formRef = useRef()
+    const familyaRef = useRef()
     const [passportBlock, setPasswordBlock] = useState("none")
     const [metirka, setMetirka] = useState("none")
     const [student, setStudent] = useState("none")
@@ -20,6 +22,7 @@ export const Aholi =  () => {
     const [oddiy, setOddiy] = useState("none")
     const [ayol, setAyol] = useState("none")
     const [dates, setDates] = useState("none")
+   
     const handleChange = (event) => {
        setDates("none")
        let yil = event.target.value.substring(0, 4)
@@ -73,30 +76,19 @@ export const Aholi =  () => {
             setBand("none")    
         }
      }
-     const handleAyollar = (event) => {
-        let yil = dateRef.current.value.substring(0, 4)
-        if(yil !== ""){
-            if(event.target.checked === true && date.getFullYear() - yil-0 > 30 ){
-                setAyol("block")
-            }else{
-                setAyol("none")
-            }
-        }
-
-     }
      const formik = useFormik({
-        initialValues:{
-            name: "",
-            lastname: "",
-            otch: "",
-        },
-        onSubmit: async (event) => {
-            const data = new FormData(formRef.current)
-            const user = {
-                ...event,
+         initialValues:{
+             name: "",
+             lastname: "",
+             otch: "",
+            },
+            onSubmit: async (event) => {
+                const data = new FormData(formRef.current)
+                user = {
+                    ...event,
+                jins: familyaRef.current.value[familyaRef.current.value.length-1] === "a"? "ayol": "erkak",
                 date: data.get("date"),
                 malumot: data.get("malumoti"),
-                jins: data.get("jins"),
                 bandlik_yoki_talaba: data.get("bandlik"),
                 oliygoh_nomi: data.get("oliygoh-nomi") !== null ? data.get("oliygoh-nomi"): false ,
                 kurs_raqami: data.get("kurs") !== null?  data.get("kurs"): false,
@@ -107,31 +99,40 @@ export const Aholi =  () => {
                 manzil: data.get("manzil"),
                 ayollar_daftari: data.get("ayol") !== null? data.get("ayol"): false
             }
-            const request = await axios.post("http://localhost:8989/aholi", {...user, vaqt: `${date.toLocaleDateString()}-${date.getHours()}:${date.getMinutes()} Ruyhatga kirgazildi`})
-            const response = await request.data
-            console.log(response)
+            let yil = dateRef.current.value.substring(0, 4)
+               if(yil !== ""){
+               if(date.getFullYear() - yil-0 > 30 && user.jins === "ayol" ){
+                   setAyol("block")
+               }else{
+                   setAyol("none")
+               }
+           }
+
+            // const request = await axios.post("http://localhost:8989/aholi", {...user, vaqt: `${date.toLocaleDateString()}-${date.getHours()}:${date.getMinutes()} Ruyhatga kirgazildi`})
+            // const response = await request.data
+            // console.log(response)
         },
         validationSchema: Yup.object({
             name: Yup.string().required("Ism majburiy"),
             lastname: Yup.string().required("Familya majburiy"),
             otch: Yup.string().required("Ota ismi majburiy"),
             
-
+            
         })
-     })
-     const handleFocus = (event) => {
+    })
+    const handleFocus = (event) => {
         if(event.target.value !== null){
             setDates("none")
         }  else{
             setDates("block")
         }
-     }
+    }
     useEffect(() => {
         if(formik?.errors?.name){
             setDates("block")
         }
     },[formik.errors])
-    console.log(formik.errors)
+
     return(
         <div className="aholi">
             <Container_Fluid>
@@ -143,7 +144,7 @@ export const Aholi =  () => {
                     {formik?.errors?.name? <p className="error_text">{formik.errors.name}</p>: false}
                     </label>
                     <label htmlFor="lastname">
-                    <input form="form"  type="text" placeholder="Familya"    {...formik.getFieldProps("lastname")} name="lastname" id="familya" />
+                    <input form="form"  type="text" ref={familyaRef} placeholder="Familya" {...formik.getFieldProps("lastname")} name="lastname" id="familya" />
                     {formik?.errors?.lastname? <p className="error_text">{formik.errors.lastname}</p> : false}
                     </label>
                 </div>
@@ -175,8 +176,8 @@ export const Aholi =  () => {
                     </select>
                     </label>
                 </div>
-                <div>
-                    <div>
+                {/* <div>/ */}
+                    {/* <div>
                         <label htmlFor="erkak">
                             Erkak
                         <input value="erkak" type="radio" required id="erkak" name="jins" />
@@ -185,13 +186,13 @@ export const Aholi =  () => {
                             Ayol        
                         <input value="ayol" id="ayol" required  onChange={handleAyollar} ref={ayollar} type="radio" name="jins" />
                         </label>               
-                    </div>
-                    <div>
-                        <label htmlFor="bandlik">
-                        <input type="text"  placeholder="Bandlik" onChange={handleChangeBands} ref={bandlik_input} id="bandlik" name="bandlik" />
+                    </div> */}
+                    <div className="temir">
+                        <label style={{width: "100%", marginLeft: "0.7rem"}} htmlFor="bandlik">
+                        <input type="text" style={{width: "48%", margin: "0 auto"}}  placeholder="Bandlik" onChange={handleChangeBands} ref={bandlik_input} id="bandlik" name="bandlik" />
                         </label>
                     </div>
-                </div>
+                {/* </div> */}
                 <div style={{display: student}}  className="temir">
                     <label  htmlFor="oliygoh-nomi">
                         <input type="text" id="oliygoh-nomi" name="oliygoh-nomi" placeholder="Oliygoh nomi" />
@@ -222,11 +223,13 @@ export const Aholi =  () => {
                     </label>
                    
                 </div>
-                <div className={ayol !== "block"? "none": "temir"}>
+                <div className={"temir"}>
+                    {/* ayol !== "block"? "none": "temir" */}
                     <label htmlFor="manzil">
                         <input name="manzil" type="text" id="manzil" placeholder="Manzil" />
                     </label>
-                    <label htmlFor="ayol" style={{display: ayol}}>
+                    {/* style={{display: ayol}} */}
+                    <label htmlFor="ayol" >
                         <input name="ayol" type="text" id="ayol" placeholder="Ayollar daftari (ha yoki yo'q)" />
                     </label>
                 </div>

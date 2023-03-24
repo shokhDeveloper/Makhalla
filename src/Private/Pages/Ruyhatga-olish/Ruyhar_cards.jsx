@@ -46,7 +46,7 @@ export const Ruyhat_cards = () => {
                             <li key={item.id}>
                             <div className="foydalanuvchi_name">
                                 <p><span>{index+1}.</span></p>
-                                <p><strong>{item.name}  {item.familya}</strong></p>
+                                <p><strong>{item.name}  {item.familya.charAt(0)}</strong></p>
                             </div>
                             <div className="foydalanuvchi_lavozim">
                                 <p><strong>{item.lavozim}</strong></p>

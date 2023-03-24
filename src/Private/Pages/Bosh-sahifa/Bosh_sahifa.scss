@@ -14,7 +14,7 @@
 }
 .bosh_card .card, .thue_cards .card{
     padding: 1rem;
-    width: 500px;
+    width: 90%;
     background: #fff;
     display: flex;
     border-radius: 10px;
@@ -34,4 +34,9 @@
 }
 .mahalla_btn{
     margin-top: 3rem;
+}
+@media only screen and (max-width: 1300px){
+    .bosh_card_align .bosh_card .card{
+        width: 90%;
+    }   
 }

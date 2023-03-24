@@ -141,3 +141,10 @@
     border-left: 1px solid #AFAFAF;
     padding-left: 1rem;
 }
+@media only screen and (max-width: 1367px){
+    .umumiy_routes ul{
+        width: 100%;
+        @include between;
+        list-style: none;
+    }
+}

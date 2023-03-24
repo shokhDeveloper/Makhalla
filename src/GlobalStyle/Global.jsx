@@ -7,7 +7,7 @@ export const Global = createGlobalStyle`
         font-family: "Rubik";
     }
     .container_fluid{
-        width: 96%;
+        width: 97%;
         margin: 0 auto;
         padding: 0 5px;
     }

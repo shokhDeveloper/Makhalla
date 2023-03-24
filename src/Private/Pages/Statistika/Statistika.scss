@@ -96,3 +96,9 @@
 .statistika_card_example p{
     padding-top: 1rem;
 }
+@media only screen and (max-width: 1367px){
+    .statistika_card_1{
+        width: 55%;
+        border: 1px solid black;
+    }
+}

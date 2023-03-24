@@ -10,7 +10,7 @@ export const Sidebar = () => {
         setSide(!side)
     }
     return(
-        <div className="sidebar" style={{width: side !== true? "6%": "18%" }} >
+        <div className="sidebar" style={{width: side !== true? "6%": false }} >
             <div className="sidebar_header">
             <div className="sidebar_logo">
             {side  !== false? (
